@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="127320" started-at="2022-09-10T08:38:19Z" finished-at="2022-09-10T08:40:26Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="127320" started-at="2022-09-10T08:38:19Z" finished-at="2022-09-10T08:40:26Z">
+      <class name="com.myntra.definition.Mobilepurchase">
+        <test-method status="PASS" signature="browserlaunch()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="browserlaunch" is-config="true" duration-ms="17136" started-at="2022-09-10T14:08:19Z" finished-at="2022-09-10T14:08:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="before" is-config="true" duration-ms="447" started-at="2022-09-10T14:08:36Z" finished-at="2022-09-10T14:08:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:1, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="search" duration-ms="26741" started-at="2022-09-10T14:08:36Z" data-provider="product name" finished-at="2022-09-10T14:09:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Realme]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="after" is-config="true" duration-ms="0" started-at="2022-09-10T14:09:03Z" finished-at="2022-09-10T14:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="before" is-config="true" duration-ms="1" started-at="2022-09-10T14:09:03Z" finished-at="2022-09-10T14:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:1, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="search" duration-ms="31442" started-at="2022-09-10T14:09:03Z" data-provider="product name" finished-at="2022-09-10T14:09:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[boAt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="after" is-config="true" duration-ms="0" started-at="2022-09-10T14:09:35Z" finished-at="2022-09-10T14:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="before" is-config="true" duration-ms="1" started-at="2022-09-10T14:09:35Z" finished-at="2022-09-10T14:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:1, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="search" duration-ms="48008" started-at="2022-09-10T14:09:35Z" data-provider="product name" finished-at="2022-09-10T14:10:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OnePlus]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="after" is-config="true" duration-ms="1" started-at="2022-09-10T14:10:23Z" finished-at="2022-09-10T14:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="quitBrowser" is-config="true" duration-ms="3471" started-at="2022-09-10T14:10:23Z" finished-at="2022-09-10T14:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.myntra.definition.Mobilepurchase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
