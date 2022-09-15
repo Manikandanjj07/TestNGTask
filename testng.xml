@@ -2,8 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
-    <classes>
-      <class name="com.myntra.definition.Mobilepurchase"/>
+  <parameter name="user" value="9842642468"/>
+  <parameter name="pass" value="Prajinkuti"/>
+      <classes>
+         <class name="com.myntra.definition.Mobilepurchase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

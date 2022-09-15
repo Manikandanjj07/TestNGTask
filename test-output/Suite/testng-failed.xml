@@ -2,10 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
+    <parameter name="pass" value="Prajinkuti"/>
+    <parameter name="user" value="9842642468"/>
     <classes>
       <class name="com.myntra.definition.Mobilepurchase">
         <methods>
-          <include name="search" invocation-numbers="0 1"/>
+          <include name="search" invocation-numbers="0 1 2"/>
           <include name="quitBrowser"/>
           <include name="before"/>
           <include name="after"/>

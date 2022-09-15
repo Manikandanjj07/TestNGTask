@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="127320" started-at="2022-09-10T08:38:19Z" finished-at="2022-09-10T08:40:26Z">
+  <suite name="Suite" duration-ms="32771" started-at="2022-09-15T05:13:25Z" finished-at="2022-09-15T05:13:58Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="127320" started-at="2022-09-10T08:38:19Z" finished-at="2022-09-10T08:40:26Z">
+    <test name="Test" duration-ms="32771" started-at="2022-09-15T05:13:25Z" finished-at="2022-09-15T05:13:58Z">
       <class name="com.myntra.definition.Mobilepurchase">
-        <test-method status="PASS" signature="browserlaunch()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="browserlaunch" is-config="true" duration-ms="17136" started-at="2022-09-10T14:08:19Z" finished-at="2022-09-10T14:08:36Z">
+        <test-method status="PASS" signature="browserlaunch()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="browserlaunch" is-config="true" duration-ms="16709" started-at="2022-09-15T10:43:25Z" finished-at="2022-09-15T10:43:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="before" is-config="true" duration-ms="447" started-at="2022-09-10T14:08:36Z" finished-at="2022-09-10T14:08:36Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="before" is-config="true" duration-ms="69" started-at="2022-09-15T10:43:42Z" finished-at="2022-09-15T10:43:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="search(java.lang.String)[pri:1, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="search" duration-ms="26741" started-at="2022-09-10T14:08:36Z" data-provider="product name" finished-at="2022-09-10T14:09:03Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="login" duration-ms="5037" started-at="2022-09-15T10:43:42Z" finished-at="2022-09-15T10:43:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9842642468]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Prajinkuti]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="after" is-config="true" duration-ms="0" started-at="2022-09-15T10:43:47Z" finished-at="2022-09-15T10:43:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="before" is-config="true" duration-ms="2" started-at="2022-09-15T10:43:47Z" finished-at="2022-09-15T10:43:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="search(java.lang.String)[pri:2, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="search" duration-ms="3145" started-at="2022-09-15T10:43:47Z" data-provider="product name" finished-at="2022-09-15T10:43:50Z">
           <params>
             <param index="0">
               <value>
@@ -23,18 +47,83 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DD-PC', ip: '192.168.157.93', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DD\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c62efa7f2c93752b588ed8385be59874
+*** Element info: {Using=id, value=twotabsearchtextbox}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DD-PC', ip: '192.168.157.93', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DD\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c62efa7f2c93752b588ed8385be59874
+*** Element info: {Using=id, value=twotabsearchtextbox}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.myntra.definition.Mobilepurchase.search(Mobilepurchase.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="after" is-config="true" duration-ms="0" started-at="2022-09-10T14:09:03Z" finished-at="2022-09-10T14:09:03Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="after" is-config="true" duration-ms="1" started-at="2022-09-15T10:43:50Z" finished-at="2022-09-15T10:43:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="before" is-config="true" duration-ms="1" started-at="2022-09-10T14:09:03Z" finished-at="2022-09-10T14:09:03Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="before" is-config="true" duration-ms="1" started-at="2022-09-15T10:43:50Z" finished-at="2022-09-15T10:43:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="search(java.lang.String)[pri:1, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="search" duration-ms="31442" started-at="2022-09-10T14:09:03Z" data-provider="product name" finished-at="2022-09-10T14:09:35Z">
+        <test-method status="FAIL" signature="search(java.lang.String)[pri:2, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="search" duration-ms="3072" started-at="2022-09-15T10:43:50Z" data-provider="product name" finished-at="2022-09-15T10:43:53Z">
           <params>
             <param index="0">
               <value>
@@ -42,18 +131,83 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DD-PC', ip: '192.168.157.93', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DD\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c62efa7f2c93752b588ed8385be59874
+*** Element info: {Using=id, value=twotabsearchtextbox}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DD-PC', ip: '192.168.157.93', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DD\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c62efa7f2c93752b588ed8385be59874
+*** Element info: {Using=id, value=twotabsearchtextbox}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.myntra.definition.Mobilepurchase.search(Mobilepurchase.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="after" is-config="true" duration-ms="0" started-at="2022-09-10T14:09:35Z" finished-at="2022-09-10T14:09:35Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="after" is-config="true" duration-ms="1" started-at="2022-09-15T10:43:53Z" finished-at="2022-09-15T10:43:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="before" is-config="true" duration-ms="1" started-at="2022-09-10T14:09:35Z" finished-at="2022-09-10T14:09:35Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="before" is-config="true" duration-ms="0" started-at="2022-09-15T10:43:53Z" finished-at="2022-09-15T10:43:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="search(java.lang.String)[pri:1, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="search" duration-ms="48008" started-at="2022-09-10T14:09:35Z" data-provider="product name" finished-at="2022-09-10T14:10:23Z">
+        <test-method status="FAIL" signature="search(java.lang.String)[pri:2, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="search" duration-ms="3041" started-at="2022-09-15T10:43:53Z" data-provider="product name" finished-at="2022-09-15T10:43:56Z">
           <params>
             <param index="0">
               <value>
@@ -61,14 +215,79 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DD-PC', ip: '192.168.157.93', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DD\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c62efa7f2c93752b588ed8385be59874
+*** Element info: {Using=id, value=twotabsearchtextbox}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DD-PC', ip: '192.168.157.93', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DD\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c62efa7f2c93752b588ed8385be59874
+*** Element info: {Using=id, value=twotabsearchtextbox}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.myntra.definition.Mobilepurchase.search(Mobilepurchase.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="after" is-config="true" duration-ms="1" started-at="2022-09-10T14:10:23Z" finished-at="2022-09-10T14:10:23Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="after" is-config="true" duration-ms="0" started-at="2022-09-15T10:43:56Z" finished-at="2022-09-15T10:43:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.myntra.definition.Mobilepurchase@1c62251]" name="quitBrowser" is-config="true" duration-ms="3471" started-at="2022-09-10T14:10:23Z" finished-at="2022-09-10T14:10:26Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.myntra.definition.Mobilepurchase@1e88b3c]" name="quitBrowser" is-config="true" duration-ms="1599" started-at="2022-09-15T10:43:56Z" finished-at="2022-09-15T10:43:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

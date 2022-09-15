@@ -27,8 +27,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
+
+import com.beust.jcommander.Parameter;
 public class Mobilepurchase {
 	public static WebDriver driver;
 	
@@ -38,6 +41,7 @@ public class Mobilepurchase {
 		return new Object[][]{{"Realme"},{"boAt"},{"OnePlus"}};
 			}
 		@BeforeClass
+		
 public static void browserlaunch()
 {
 	System.out.println("Browser Launching");
@@ -45,6 +49,7 @@ public static void browserlaunch()
 	driver= new ChromeDriver();
 	driver.get("https://www.amazon.in/");
 	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 @AfterClass
 public void quitBrowser()
@@ -64,7 +69,18 @@ public void after()
 	System.out.println("Ending Time");
 	System.out.println(java.time.LocalTime.now());
 }
-@Test(priority=1, dataProvider ="product name")
+@Parameters({"user","pass"}) 
+@Test(priority=1)
+public void login(String user1, String pass1) throws InterruptedException
+{
+	driver.findElement(By.xpath("//span[contains(text(),'Hello,')]")).click();
+	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	driver.findElement(By.id("ap_email")).sendKeys(user1 ,Keys.ENTER);
+	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+	driver.findElement(By.id("ap_password")).sendKeys(pass1 ,Keys.ENTER);
+
+	}
+@Test(priority=2, dataProvider ="product name")
 public void search(String dName) throws Exception
 {	
 	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
